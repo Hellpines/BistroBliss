@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
+
+.preview{
+    background-image: url('/image110.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 165px 0;
+    & .title{
+        max-width: 667px;
+        letter-spacing: 0px;
+        line-height: 0.5;
+        text-align: center;
+        font: 400 100px 'Playfair Display';
+    }
+    & .addition{
+        max-width: 667px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        font:400 20px 'DM Sans';
+        margin: 35px 0;
+    }
+    & .buttons{
+        display: flex;
+        gap:16px;
+        & button{
+            border: 1.5px solid rgba(44, 47, 36, 1);
+            padding: 20px 32px;
+            color: rgba(24, 34, 38, 1);
+            text-align: right;
+            vertical-align: middle;
+            font:700 16px 'DM Sans';
+            border-radius: 118px;
+            background-color: transparent;
+        }
+        & button:hover{
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(173, 52, 62, 1);
+            border: 0px solid black;
+        }
+    }
+}
+.menu{
+    background-color: rgba(255, 255, 255, 1);
+    margin: 90px 50px;
+    & .menuWrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 64px auto;
+        gap:24px;
+    }
+    & h1{
+        line-height: 60.5px;
+        letter-spacing: 0px;
+        text-align: center;
+        font: 500 55px 'Playfair Display';
+        color: rgba(44, 47, 36, 1);
+    }
+}
+.services{
+    max-width: 1296px;
+    margin: 0 auto;
+    & h1{
+        line-height: 60.5px;
+        letter-spacing: 0px;
+        text-align: left;
+        font: 500 55px 'Playfair Display';
+        color: rgba(44, 47, 36, 1);
+    }
+     & .ServWrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 64px auto;
+        gap:24px;
+    }
+}

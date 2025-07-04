@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.block{
+    background-color: rgba(71, 71, 71, 1);
+    margin: 10px auto 0;
+    padding: 120px 0 100px;
+    display: flex;
+    justify-content: center;
+    & .wrapper{
+        max-width: 1296px;
+        display: flex;
+        justify-content: space-between;
+        gap:125px;
+        & .left{
+            max-width: 293px;
+            & .food{
+                display: flex;
+                gap:22px;
+                align-items: center;
+                & p{
+                    font-style: italic;
+                    font: 600 33px "Playfair Display";
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+            & .dop{
+                color: rgba(173, 178, 158, 1);
+                font: 400 16px "DM Sans";
+                margin-top: 30px;
+            }
+        }
+        & .center{
+            & h1{
+                font: 700 16px 'DM Sans';
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 15px;
+            }
+            & p{
+                font: 400 16px 'DM Sans';
+                color: rgba(219, 223, 208, 1);
+                margin-bottom: 25px;
+            }
+        }
+        & .right{
+            & h1{
+                font: 700 16px 'DM Sans';
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 40px;
+            }
+            & .images{
+                display: grid;
+                grid-template-columns: repeat(2,212px);
+                grid-template-rows: repeat(2,186px);
+                & Image,img{
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+.copir{
+    background-color: rgba(71, 71, 71, 1);
+    display: flex;
+    justify-content: center;
+    padding:30px 0 120px;
+    border-top: 1px solid rgba(65, 69, 54, 1);
+    & h1{
+    font: 400 16px 'DM Sans';
+    color: rgba(173, 178, 158, 1);
+     max-width: 1296px;
+     text-align: center;
+    }
+}

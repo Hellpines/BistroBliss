@@ -1,0 +1,119 @@
+.contact_info{
+    background: rgba(249, 249, 247, 1);
+    padding: 85px 150px 150px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & .left{
+        position: relative;
+        & .contact_block{
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+            padding: 50px;
+            background: rgba(71, 71, 71, 1);
+            max-width: 311px;
+            border-radius: 12px;
+            color: #fff;
+            & h2{
+                margin-bottom: 45px;
+                font:700 24px DM Sans;
+                line-height: 30px;
+                letter-spacing: -3%;
+            }
+            & .text{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                max-width: 311px;
+                & .item{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    font: 400 16px DM Sans;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                }
+                & .item:last-child{
+                    align-items: start;
+                }
+            }
+        }
+    }
+    & .right{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 557px;
+        & h1{
+            font: 500 55px Playfair Display;
+            line-height: 60.5px;
+            letter-spacing: 0px;
+        }
+        & h4{
+            font: 500 18px DM Sans;
+            line-height: 28px;
+            letter-spacing: 0px;
+        }
+        & p{
+            font: 400 16px DM Sans;
+            line-height: 24px;
+            letter-spacing: 0px;
+        }
+    }
+}
+.information{
+    display: flex;
+    padding: 120px 150px;
+    justify-content: space-between;
+    align-items: center;
+    & .left{
+        max-width: 610px;
+        & .text {
+            & h1{
+                font: 500 55px Playfair Display;
+                line-height: 60.5px;
+                letter-spacing: 0px;
+                color: rgba(44, 47, 36, 1);
+            }
+            & p{
+                font: 400 16px DM Sans;
+                line-height: 24px;
+                letter-spacing: 0px;
+                margin: 20px 0 60px;
+                color: rgba(65, 69, 54, 1);
+            }
+        }
+    }
+    & .counts{
+        display: grid;
+        grid-template-columns: 293px 293px;
+        grid-template-rows: 174px 174px;
+        gap: 24px;
+        & .count{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(219, 223, 208, 1);
+            border-radius: 8px;
+            & h1{
+                font: 500 55px Playfair Display;
+                line-height: 60.5px;
+                letter-spacing: 0px;
+                text-align: center;
+                vertical-align: middle;
+                color: rgba(44, 47, 36, 1);
+            }
+            & h3{
+                font: 500 18px DM Sans;
+                line-height: 28px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: rgba(65, 69, 54, 1);
+            }
+        }
+    }
+}

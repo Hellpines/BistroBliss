@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Sans:wght@100..900&display=swap');
+.wrapper{
+    background-color:rgba(71, 71, 71, 1) ;
+    padding: 14px 150px 14px 150px;
+    max-width: 100%;
+    color: rgba(249, 249, 247, 1);
+    display: flex;
+    justify-content: space-between;
+    & p{
+        font:400 16px "DM Sans";
+    }
+    & .left{
+        display: flex;
+        gap: 25px;
+        & div{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            & Image{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    & .right{
+        display: flex;
+        gap:4px;
+        & .block{
+            padding: 2px;
+            width: 27px;
+            height: 27px;
+            background-color: rgba(249, 249, 247, 0.12);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & Image{
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+}
+.secondWrap{
+    padding: 25px 150px 25px 150px;
+    background-color: rgba(249, 249, 247, 1);
+    display: flex;
+    justify-content: space-between;
+    & .left{
+        display: flex;
+        gap:14px;
+        align-items: center;
+        & p{
+            color: rgba(71, 71, 71, 1);
+            font: 600 43px "Playfair Display";
+            font-style: italic;
+        }
+    }
+    & .center{
+        display: flex;
+        gap:14px;
+        color: rgba(44, 47, 36, 1);
+        align-items: center;
+        & p {
+            padding: 4px 16px;
+        }
+        & p:hover{
+            background-color: rgba(219, 223, 208, 1);
+            border-radius: 100px;
+        }
+    }
+    & .right{
+        max-width: 147px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        color: rgba(24, 34, 38, 1);
+        border: 2px solid rgba(44, 47, 36, 1);
+        border-radius: 118px;
+        & p{
+            font:700 16px "DM Sans";
+        }
+    }
+}

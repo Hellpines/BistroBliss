@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Sans:wght@100..900&display=swap');
+.wrapper{
+    border: 1.5px solid rgba(219, 223, 208, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px 35px 35px;
+    & .image{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(249, 249, 247, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        margin: 0 auto;
+    }
+    & .title{
+        line-height: 30px;
+        letter-spacing: -3%;
+        text-align: center;
+        font: 700 24px "DM Sans";
+        color: rgba(44, 47, 36, 1);
+        margin: 30px 0 15px;
+    }
+    & .dop{
+        line-height: 30px;
+        letter-spacing: -3%;
+        text-align: center;
+        font: 400 16px "DM Sans";
+        color: rgba(65, 69, 54, 1);
+    }
+    & .button{
+        font: 700 16px "DM Sans";
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: rgba(173, 52, 62, 1);
+        margin-top:15px ;
+    }
+}
