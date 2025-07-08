@@ -1,0 +1,103 @@
+.card{
+    background: rgba(255, 255, 255, 1);
+    padding: 85px 150px 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    .right{
+        max-width: 458px;
+        .info{
+            display: flex;
+            img{
+                margin: 12px 8px 0px 0px;
+            }
+        }
+        h1{
+            font: 600 55px Playfair Display;
+            line-height: 125%;
+            letter-spacing: 0%;
+            color: #2C2F24;
+            margin-bottom: 12px;
+        }
+        h3{
+            font: 400 16px DM Sans;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #403F3D;
+            margin-bottom: 20px;
+            &:last-of-type{
+                margin-bottom: 8px;
+            }
+        }
+        .sizes{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 21px;
+            .size_item{
+                display: flex;
+                gap: 8px;
+                margin-bottom: 21px;
+                border-radius: 100px;
+                border: 1px solid #403F3D;
+                padding: 8px;
+                font: 700 16px DM Sans;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+                .size{
+                    background: #403F3D;
+                    color: #fff;
+                    padding: 2px 9px;
+                    border-radius: 100px;
+                }
+                .unit{
+                    margin: 0;
+                    margin-top: 4px;
+                    color: #403F3D;
+                }
+                &:hover{
+                    background: #403F3D;
+                    .size{
+                        color: #403F3D;
+                        background: #fff;
+                    }
+                    .unit{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .total{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #403F3D;
+            font: 700 24px DM Sans;
+            line-height: 125%;
+            letter-spacing: 0%;
+            color: #403F3D;
+        }
+        p{
+            margin: 12px 0 46px;
+        }
+        .button_add{
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: 1px solid #403F3D;
+            font: 700 16px DM Sans;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            border-radius: 100px;
+            &:hover{
+                background: #403F3D;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}

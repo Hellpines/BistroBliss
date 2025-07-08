@@ -1,14 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair_display = Playfair_Display({
+  // variable: "--font-geist-sans",
+  weight: ['400', '500', '600', '700', '800', '900'],
+  subsets: ["latin", 'cyrillic'],
+});
+
+const dm_sans = DM_Sans({
+  // variable: "--font-geist-mono",
+  weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const inter = Inter({
+  // variable: "--font-geist-mono",
+  weight: ['400', '500', '600', '700', '800', '900'],
+  subsets: ["latin", 'cyrillic'],
 });
 
 export const metadata = {
@@ -19,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${playfair_display.className} ${dm_sans.className} ${inter.className}`}>
         {children}
       </body>
     </html>

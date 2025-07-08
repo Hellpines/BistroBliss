@@ -7,41 +7,49 @@ import Image from "next/image";
 
 const products = [
     {
+        id: 1,
         price: "$ 9.99",
         name: "Fried Eggs",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 2,
         price: "$ 15.99",
         name: "Hawaiian Pizza",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 3,
         price: "$ 7.25",
         name: "Martinez Cocktail",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 4,
         price: "$ 20.99",
         name: "Butterscotch Cake",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 5,
         price: "$ 5.89",
         name: "Mint Lemonade",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 6,
         price: "$ 18.05",
         name: "Chocolate Icecream",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 7,
         price: "$ 12.55",
         name: "Cheese Burger",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
     },
     {
+        id: 8,
         price: "$ 12.99",
         name: "Classic Waffles",
         description: "Made with eggs, lettuce, salt, oil and other ingredients."
@@ -77,17 +85,16 @@ function Menu() {
                     </div>
                 </div>
                 <div className={style.cards}>
-                    {products.map(el => <div className={style.item}>
-                        <Image
-                            src={eggs}
-                            alt=''
-                        />
+                    {products.map(el => <a href={`/Menu/${el.id}`}>
+                    <div className={style.item}>
+                        <Image src={eggs} alt=''/>
                         <div className={style.text}>
                             <h2>{el.price}</h2>
                             <h3>{el.name}</h3>
                             <p>{el.description}</p>
                         </div>
-                    </div>)}
+                    </div>
+                    </a> )}
                 </div>
             </div>
 
